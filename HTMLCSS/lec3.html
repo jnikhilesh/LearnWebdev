@@ -1,0 +1,79 @@
+<!-- Web Forms for implementing a payment form -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+
+	</head>
+	<body>
+		<form action="">
+
+			<!-- Input Types Ref: https://www.w3schools.com/html/html_form_input_types.asp-->
+
+			<h1>Payment Form</h1>
+			<p>Required Feilds are followed by *</p>
+			<h2>Contact information</h2>
+			<p>Name: * <input type="text" name="fname" required></p>
+			
+			<fieldset> <!-- border maar dega bs aur kya-->
+				<legend>Gender</legend> <!-- this will give kinda title to the feild that wraps it.-->
+				<p>
+					<b>Gender</b><br>
+					<!-- all the choices in a radio should have same name, or else browser will consider them different radios. like choices of different MCQ. -->
+					Male <input type="radio" name="gender" id="1">
+					Female <input type="radio" name="gender" id="2">
+					Other <input type="radio" name="gender" id="3">
+				</p>
+			</fieldset>
+
+			<p>
+				Address: <textarea name="address" id="address" cols="100" rows="8"></textarea>
+			</p>
+
+			<!-- we could have used type=text but type=email automatically validates email put in it -->
+			<p>Email: <input type="email" name="email" id="email"></p>
+
+			<p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+
+		<!-- Contact Info Ends -->
+
+			<h2>Payment Details</h2>
+			<p>Card Type:
+				<select name="card_type" id="card_type">
+					<option value="none">--Select a Card Type--</option>
+					<option value="visa">Visa</option>
+					<option value="mastercard">MasterCard</option>
+					<option value="rupay">Rupay</option>
+				</select>
+			</p>
+			<p>Card Number:
+				<input type="number" name="cardnumber" id="cardnumber">
+			</p>
+			<p> Expiry Month:
+				<input type="month" name="exp_month">
+			</p>
+
+			<p>CVV: 
+				<input type="password" name="cvv" id="cvv">
+			</p>
+
+			<input type="submit" value="Pay Now/Submit">
+		</form>
+
+
+		<form>
+			<h2>User Details</h2> <br>
+
+			<label for="firstname">First Name:</label> <br>
+			<input type="text" name="firstname"> <br>
+
+			<label for="lastname">Last Name</label> <br>
+			<input type="text" name="lastname"> <br>
+
+			<b>Gender</b> <br>
+			<label for="male">Male</label> <input type="radio" name="male"> <br>
+			<label for="female">Female</label> <input type="radio" name="female"><br>
+			<label for="other">Don't Want to disclose</label> <input type="radio" name="other"> <br>
+		</form>
+	</body>
+</html>
