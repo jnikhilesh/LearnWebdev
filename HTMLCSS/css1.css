@@ -1,0 +1,33 @@
+h4{
+	color: darkgreen;
+}
+
+p{
+	color: darkred;
+}
+
+p a{
+	color: hotpink;
+}
+
+li{
+	list-style-type: square;
+}
+
+.ofgreen{
+	color: green;
+	font-weight: bold;
+}
+
+.ofred{
+	color: red;
+	font-style: italic;
+}
+
+.ofblue{
+	color: blue;
+}
+
+span.current{
+	font-style: italic;
+}
